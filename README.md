@@ -33,5 +33,18 @@ php artisan breeze:install
 // Blade with Alpine   
 ```
 
+###### split default name into first name and last name in users table
+- Change name to first_name in users migrations and new column last_name
+- Change is register blade form as well.
 
-# Laravel-11-mini-CRM
+```
+php artisan migrate:fresh
+```
+- changes in users factory as well
+```
+            'first_name' => fake()->firstName(),
+            'last_name' => fake()->lastName(),
+```
+```
+php artisan db:seed
+```

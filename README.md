@@ -48,3 +48,10 @@ php artisan migrate:fresh
 ```
 php artisan db:seed
 ```
+
+#### User CRUD
+- create resource usercontroller 
+
+```
+php artisan make:controller UserController --resource --model=User
+```

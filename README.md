@@ -163,11 +163,3 @@ php artisan migrate:fresh --seed
         ]);
     })
 ```
-
-#### Client CRUD
- - Now create model, with -a flag using this flag we will get factory, migration, seeder, StoreClientRequest,  UpdateClientRequest, ClientController resource controller and policy
-
- ```
- php artisan make:model Client -a
- ```
- 
